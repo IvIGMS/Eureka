@@ -23,4 +23,9 @@ public class ItemController {
     public Item detalle(@PathVariable Long id, @PathVariable Integer cantidad){
         return itemService.getItemById(id, cantidad);
     }
+
+    @GetMapping("/pruebas")
+    public String saludo(){
+        return "Hola mundo!";
+    }
 }
